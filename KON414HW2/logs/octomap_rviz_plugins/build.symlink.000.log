@@ -1,0 +1,4 @@
+Symlinking /home/kadir/KON414HW2/devel/lib/liboctomap_rviz_plugins.so
+Symlinking /home/kadir/KON414HW2/devel/lib/pkgconfig/octomap_rviz_plugins.pc
+Symlinking /home/kadir/KON414HW2/devel/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+Symlinking /home/kadir/KON414HW2/devel/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake

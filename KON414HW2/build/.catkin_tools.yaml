@@ -1,0 +1,6 @@
+devel_space: /home/kadir/KON414HW2/devel
+install: false
+install_space: /home/kadir/KON414HW2/install
+profile: default
+source_space: /home/kadir/KON414HW2/src
+workspace: /home/kadir/KON414HW2

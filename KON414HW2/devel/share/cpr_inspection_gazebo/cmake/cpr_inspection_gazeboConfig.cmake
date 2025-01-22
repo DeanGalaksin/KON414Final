@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/cpr_inspection_gazebo/share/cpr_inspection_gazebo/cmake/cpr_inspection_gazeboConfig.cmake

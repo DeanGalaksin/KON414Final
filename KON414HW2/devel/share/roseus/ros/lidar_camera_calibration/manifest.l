@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/lidar_camera_calibration/share/roseus/ros/lidar_camera_calibration/manifest.l

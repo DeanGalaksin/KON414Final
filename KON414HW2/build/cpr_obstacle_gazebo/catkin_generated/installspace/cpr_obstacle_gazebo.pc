@@ -1,0 +1,8 @@
+prefix=/home/kadir/KON414HW2/install
+
+Name: cpr_obstacle_gazebo
+Description: Description of cpr_obstacle_gazebo
+Version: 0.2.8
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

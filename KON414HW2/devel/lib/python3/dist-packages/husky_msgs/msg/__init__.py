@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/husky_msgs/lib/python3/dist-packages/husky_msgs/msg/__init__.py

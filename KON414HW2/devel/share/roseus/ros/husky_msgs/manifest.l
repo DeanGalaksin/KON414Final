@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/husky_msgs/share/roseus/ros/husky_msgs/manifest.l

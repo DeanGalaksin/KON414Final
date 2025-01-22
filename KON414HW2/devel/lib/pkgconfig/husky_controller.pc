@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/husky_controller/lib/pkgconfig/husky_controller.pc

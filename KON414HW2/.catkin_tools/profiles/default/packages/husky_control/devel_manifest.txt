@@ -1,0 +1,5 @@
+husky/husky_control
+/home/kadir/KON414HW2/devel/.private/husky_control/cmake.lock /home/kadir/KON414HW2/devel/./cmake.lock
+/home/kadir/KON414HW2/devel/.private/husky_control/lib/pkgconfig/husky_control.pc /home/kadir/KON414HW2/devel/lib/pkgconfig/husky_control.pc
+/home/kadir/KON414HW2/devel/.private/husky_control/share/husky_control/cmake/husky_controlConfig-version.cmake /home/kadir/KON414HW2/devel/share/husky_control/cmake/husky_controlConfig-version.cmake
+/home/kadir/KON414HW2/devel/.private/husky_control/share/husky_control/cmake/husky_controlConfig.cmake /home/kadir/KON414HW2/devel/share/husky_control/cmake/husky_controlConfig.cmake

@@ -1,0 +1,6 @@
+octomap_rviz_plugins
+/home/kadir/KON414HW2/devel/.private/octomap_rviz_plugins/cmake.lock /home/kadir/KON414HW2/devel/./cmake.lock
+/home/kadir/KON414HW2/devel/.private/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so /home/kadir/KON414HW2/devel/lib/liboctomap_rviz_plugins.so
+/home/kadir/KON414HW2/devel/.private/octomap_rviz_plugins/lib/pkgconfig/octomap_rviz_plugins.pc /home/kadir/KON414HW2/devel/lib/pkgconfig/octomap_rviz_plugins.pc
+/home/kadir/KON414HW2/devel/.private/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake /home/kadir/KON414HW2/devel/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+/home/kadir/KON414HW2/devel/.private/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake /home/kadir/KON414HW2/devel/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake

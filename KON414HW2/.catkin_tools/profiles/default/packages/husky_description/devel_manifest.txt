@@ -1,0 +1,5 @@
+husky/husky_description
+/home/kadir/KON414HW2/devel/.private/husky_description/cmake.lock /home/kadir/KON414HW2/devel/./cmake.lock
+/home/kadir/KON414HW2/devel/.private/husky_description/lib/pkgconfig/husky_description.pc /home/kadir/KON414HW2/devel/lib/pkgconfig/husky_description.pc
+/home/kadir/KON414HW2/devel/.private/husky_description/share/husky_description/cmake/husky_descriptionConfig.cmake /home/kadir/KON414HW2/devel/share/husky_description/cmake/husky_descriptionConfig.cmake
+/home/kadir/KON414HW2/devel/.private/husky_description/share/husky_description/cmake/husky_descriptionConfig-version.cmake /home/kadir/KON414HW2/devel/share/husky_description/cmake/husky_descriptionConfig-version.cmake

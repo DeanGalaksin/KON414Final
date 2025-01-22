@@ -1,0 +1,54 @@
+In file included from /usr/include/boost/preprocessor/tuple/elem.hpp:23,
+                 from /usr/include/boost/preprocessor/arithmetic/add.hpp:21,
+                 from /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66,
+                 from /usr/include/boost/mpl/aux_/na_spec.hpp:28,
+                 from /usr/include/boost/mpl/next_prior.hpp:18,
+                 from /usr/include/boost/mpl/next.hpp:17,
+                 from /usr/include/boost/mpl/list/aux_/push_front.hpp:18,
+                 from /usr/include/boost/mpl/list/list0.hpp:19,
+                 from /usr/include/boost/mpl/list/list10.hpp:18,
+                 from /usr/include/boost/mpl/list/list20.hpp:18,
+                 from /usr/include/boost/mpl/list.hpp:36,
+                 from /usr/include/boost/math/policies/policy.hpp:9,
+                 from /usr/include/boost/math/policies/error_handling.hpp:21,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:9:
+/home/kadir/KON414HW2/src/lidar_camera_calibration/include/lidar_camera_calibration/PreprocessUtils.h:47:74: warning: ‘using uint16_t = uint16_t’ is deprecated: use std::uint16_t instead of pcl::uint16_t [-Wdeprecated-declarations]
+   47 | (float, x, x) (float, y, y) (float, z, z) (float, intensity, intensity) (uint16_t, ring, ring))
+      |                                                                          ^~~~~~~~
+In file included from /usr/include/pcl-1.10/pcl/PCLHeader.h:10,
+                 from /usr/include/pcl-1.10/pcl/point_cloud.h:47,
+                 from /opt/ros/noetic/include/pcl_ros/point_cloud.h:5,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:22:
+/usr/include/pcl-1.10/pcl/pcl_macros.h:94:9: note: declared here
+   94 |   using uint16_t [[deprecated("use std::uint16_t instead of pcl::uint16_t")]] = std::uint16_t;
+      |         ^~~~~~~~
+In file included from /usr/include/boost/preprocessor/tuple/elem.hpp:23,
+                 from /usr/include/boost/preprocessor/arithmetic/add.hpp:21,
+                 from /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66,
+                 from /usr/include/boost/mpl/aux_/na_spec.hpp:28,
+                 from /usr/include/boost/mpl/next_prior.hpp:18,
+                 from /usr/include/boost/mpl/next.hpp:17,
+                 from /usr/include/boost/mpl/list/aux_/push_front.hpp:18,
+                 from /usr/include/boost/mpl/list/list0.hpp:19,
+                 from /usr/include/boost/mpl/list/list10.hpp:18,
+                 from /usr/include/boost/mpl/list/list20.hpp:18,
+                 from /usr/include/boost/mpl/list.hpp:36,
+                 from /usr/include/boost/math/policies/policy.hpp:9,
+                 from /usr/include/boost/math/policies/error_handling.hpp:21,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:9:
+/home/kadir/KON414HW2/src/lidar_camera_calibration/include/lidar_camera_calibration/PreprocessUtils.h:65:61: warning: ‘using uint16_t = uint16_t’ is deprecated: use std::uint16_t instead of pcl::uint16_t [-Wdeprecated-declarations]
+   65 | (float, intensity, intensity)(double, timestamp, timestamp)(uint16_t, ring, ring))
+      |                                                             ^~~~~~~~
+In file included from /usr/include/pcl-1.10/pcl/PCLHeader.h:10,
+                 from /usr/include/pcl-1.10/pcl/point_cloud.h:47,
+                 from /opt/ros/noetic/include/pcl_ros/point_cloud.h:5,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:22:
+/usr/include/pcl-1.10/pcl/pcl_macros.h:94:9: note: declared here
+   94 |   using uint16_t [[deprecated("use std::uint16_t instead of pcl::uint16_t")]] = std::uint16_t;
+      |         ^~~~~~~~

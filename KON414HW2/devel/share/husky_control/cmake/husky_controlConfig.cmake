@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/husky_control/share/husky_control/cmake/husky_controlConfig.cmake

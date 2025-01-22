@@ -1,0 +1,8 @@
+prefix=/home/kadir/KON414HW2/devel/.private/husky_controller
+
+Name: husky_controller
+Description: Description of husky_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,90 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _lidar_camera_calibration_generate_messages_check_deps_marker_6dof[0m
+[35m[1mScanning dependencies of target find_transform[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _lidar_camera_calibration_generate_messages_check_deps_marker_6dof
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages_eus[0m
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages_py[0m
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages_cpp[0m
+[ 10%] [34m[1mGenerating EusLisp manifest code for lidar_camera_calibration[0m
+[ 20%] [34m[1mGenerating EusLisp code from lidar_camera_calibration/marker_6dof.msg[0m
+[ 30%] [34m[1mGenerating Javascript code from lidar_camera_calibration/marker_6dof.msg[0m
+[ 40%] [34m[1mGenerating Python from MSG lidar_camera_calibration/marker_6dof[0m
+[ 50%] [34m[1mGenerating C++ code from lidar_camera_calibration/marker_6dof.msg[0m
+[ 60%] [34m[1mGenerating Lisp code from lidar_camera_calibration/marker_6dof.msg[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/find_transform.dir/src/find_velodyne_points.cpp.o[0m
+[ 70%] Built target lidar_camera_calibration_generate_messages_nodejs
+[ 80%] [32mBuilding CXX object CMakeFiles/find_transform.dir/src/Corners.cpp.o[0m
+[ 80%] Built target lidar_camera_calibration_generate_messages_lisp
+[ 90%] [34m[1mGenerating Python msg __init__.py for lidar_camera_calibration[0m
+[ 90%] Built target lidar_camera_calibration_generate_messages_cpp
+[ 90%] Built target lidar_camera_calibration_generate_messages_py
+[ 90%] Built target lidar_camera_calibration_generate_messages_eus
+[35m[1mScanning dependencies of target lidar_camera_calibration_generate_messages[0m
+[ 90%] Built target lidar_camera_calibration_generate_messages
+In file included from /usr/include/boost/preprocessor/tuple/elem.hpp:23,
+                 from /usr/include/boost/preprocessor/arithmetic/add.hpp:21,
+                 from /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66,
+                 from /usr/include/boost/mpl/aux_/na_spec.hpp:28,
+                 from /usr/include/boost/mpl/next_prior.hpp:18,
+                 from /usr/include/boost/mpl/next.hpp:17,
+                 from /usr/include/boost/mpl/list/aux_/push_front.hpp:18,
+                 from /usr/include/boost/mpl/list/list0.hpp:19,
+                 from /usr/include/boost/mpl/list/list10.hpp:18,
+                 from /usr/include/boost/mpl/list/list20.hpp:18,
+                 from /usr/include/boost/mpl/list.hpp:36,
+                 from /usr/include/boost/math/policies/policy.hpp:9,
+                 from /usr/include/boost/math/policies/error_handling.hpp:21,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:9:
+/home/kadir/KON414HW2/src/lidar_camera_calibration/include/lidar_camera_calibration/PreprocessUtils.h:47:74: warning: ‘using uint16_t = uint16_t’ is deprecated: use std::uint16_t instead of pcl::uint16_t [-Wdeprecated-declarations]
+   47 | (float, x, x) (float, y, y) (float, z, z) (float, intensity, intensity) (uint16_t, ring, ring))
+      |                                                                          ^~~~~~~~
+In file included from /usr/include/pcl-1.10/pcl/PCLHeader.h:10,
+                 from /usr/include/pcl-1.10/pcl/point_cloud.h:47,
+                 from /opt/ros/noetic/include/pcl_ros/point_cloud.h:5,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:22:
+/usr/include/pcl-1.10/pcl/pcl_macros.h:94:9: note: declared here
+   94 |   using uint16_t [[deprecated("use std::uint16_t instead of pcl::uint16_t")]] = std::uint16_t;
+      |         ^~~~~~~~
+In file included from /usr/include/boost/preprocessor/tuple/elem.hpp:23,
+                 from /usr/include/boost/preprocessor/arithmetic/add.hpp:21,
+                 from /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66,
+                 from /usr/include/boost/mpl/aux_/na_spec.hpp:28,
+                 from /usr/include/boost/mpl/next_prior.hpp:18,
+                 from /usr/include/boost/mpl/next.hpp:17,
+                 from /usr/include/boost/mpl/list/aux_/push_front.hpp:18,
+                 from /usr/include/boost/mpl/list/list0.hpp:19,
+                 from /usr/include/boost/mpl/list/list10.hpp:18,
+                 from /usr/include/boost/mpl/list/list20.hpp:18,
+                 from /usr/include/boost/mpl/list.hpp:36,
+                 from /usr/include/boost/math/policies/policy.hpp:9,
+                 from /usr/include/boost/math/policies/error_handling.hpp:21,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/noetic/include/ros/time.h:58,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:9:
+/home/kadir/KON414HW2/src/lidar_camera_calibration/include/lidar_camera_calibration/PreprocessUtils.h:65:61: warning: ‘using uint16_t = uint16_t’ is deprecated: use std::uint16_t instead of pcl::uint16_t [-Wdeprecated-declarations]
+   65 | (float, intensity, intensity)(double, timestamp, timestamp)(uint16_t, ring, ring))
+      |                                                             ^~~~~~~~
+In file included from /usr/include/pcl-1.10/pcl/PCLHeader.h:10,
+                 from /usr/include/pcl-1.10/pcl/point_cloud.h:47,
+                 from /opt/ros/noetic/include/pcl_ros/point_cloud.h:5,
+                 from /home/kadir/KON414HW2/src/lidar_camera_calibration/src/find_velodyne_points.cpp:22:
+/usr/include/pcl-1.10/pcl/pcl_macros.h:94:9: note: declared here
+   94 |   using uint16_t [[deprecated("use std::uint16_t instead of pcl::uint16_t")]] = std::uint16_t;
+      |         ^~~~~~~~
+[100%] [32m[1mLinking CXX executable /home/kadir/KON414HW2/devel/.private/lidar_camera_calibration/lib/lidar_camera_calibration/find_transform[0m
+[100%] Built target find_transform

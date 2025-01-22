@@ -1,0 +1,1 @@
+/home/kadir/KON414HW2/devel/.private/husky_msgs/share/common-lisp/ros/husky_msgs/msg/_package_HuskyStatus.lisp
