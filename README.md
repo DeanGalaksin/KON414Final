@@ -2,4 +2,9 @@
 
 Scripts
 ----------
-Written scripts are in husky_controller. However, it is 
+Written scripts are in husky_controller.
+
+
+URDF
+---------
+Modified URDF is in Husky Description
