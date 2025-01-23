@@ -1,0 +1,3 @@
+[submodule "KON414HW2/src/husky_controller/husky"]
+	path = KON414HW2/src/husky_controller/husky
+	url = https://github.com/husky/husky
