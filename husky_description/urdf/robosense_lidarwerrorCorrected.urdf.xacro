@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="husky_with_robosense">
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+
+  <!-- Robosense LiDAR Makrosu -->
+  <xacro:macro name="robosense_lidar" params="parent_link name topic hz lasers samples collision_range min_range max_range noise min_angle max_angle gpu">
+  <!-- Base Mount Joint -->
+  <joint name="${name}_base_mount_joint" type="fixed">
+    <origin xyz="0 0 0.29" rpy="0 0 0" />
+    <parent link="${parent_link}"/>
+    <child link="${name}_base_link"/>
+  </joint>
+
+  <!-- Base Link -->
+  <link name="${name}_base_link">
+    <inertial>
+      <mass value="0.87"/>
+      <origin xyz="0 0 1"/>
+      <inertia ixx="0.001094695" ixy="0" ixz="0"
+               iyy="0.001094695" iyz="0"
+               izz="0.001245079"/>
+    </inertial>
+    <visual>
+      <origin rpy="-1.5707 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/kadir/KON414HW2/src/husky/husky_description/meshes/robosense_16.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.0535" length="0.0817"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Base Scan Joint -->
+  <joint name="${name}_base_scan_joint" type="fixed">
+    <parent link="${name}_base_link" />
+    <child link="${name}"/>
+    <origin xyz="0 0 0.039" rpy="0 0 0" />
+  </joint>
+
+  <!-- Lidar Link -->
+  <link name="${name}">
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="1e-7" ixy="0" ixz="0" iyy="1e-7" iyz="0" izz="1e-7"/>
+    </inertial>
+  </link>
+
+    <!-- Gazebo Sensor Tanımı -->
+    <gazebo reference="${name}">
+      <xacro:if value="${gpu}">
+        <sensor type="gpu_ray" name="${name}-RS16">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>false</visualize>
+          <update_rate>${hz}</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>${samples}</samples>
+                <resolution>1</resolution>
+                <min_angle>${min_angle}</min_angle>
+                <max_angle>${max_angle}</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>${lasers}</samples>
+                <resolution>1</resolution>
+                <min_angle>-${15.0*M_PI/180.0}</min_angle>
+                <max_angle>${15.0*M_PI/180.0}</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>${collision_range}</min>
+              <max>${max_range}</max>
+              <resolution>0.001</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </ray>
+          <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_robosense_gpu_laser.so">
+            <topicName>${topic}</topicName>
+            <frameName>${name}</frameName>
+            <min_range>${min_range}</min_range>
+            <max_range>${max_range}</max_range>
+            <gaussianNoise>${noise}</gaussianNoise>
+          </plugin>
+        </sensor>
+      </xacro:if>
+      <xacro:unless value="${gpu}">
+        <sensor type="ray" name="${name}-RS16">
+          <pose>${0.2-0.2420} ${0.2-0.1964} ${0.0195} ${-0.0034} ${-0.15+0.1425} 0.0084</pose>
+          <visualize>false</visualize>
+          <update_rate>${hz}</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>${samples}</samples>
+                <resolution>1</resolution>
+                <min_angle>${min_angle}</min_angle>
+                <max_angle>${max_angle}</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>${lasers}</samples>
+                <resolution>1</resolution>
+                <min_angle>-${15.0*M_PI/180.0}</min_angle>
+                <max_angle>${15.0*M_PI/180.0}</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>${collision_range}</min>
+              <max>${max_range}</max>
+              <resolution>0.001</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </ray>
+          <!-- plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_robosense_laser.so" -->
+          <plugin name="gazebo_ros_laser_controller" filename="libgazebo_ros_block_laser.so">
+            <topicName>/robosense_points</topicName>
+            <frameName>robosense</frameName>
+   	    <min_range>0.4</min_range>
+  	    <max_range>150.0</max_range>
+	    <gaussianNoise>0.008</gaussianNoise>
+          </plugin>
+        </sensor>
+      </xacro:unless>
+    </gazebo>
+  </xacro:macro>
+
+</robot>
+
